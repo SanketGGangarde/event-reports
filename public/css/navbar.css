@@ -1,0 +1,231 @@
+/* =========================
+   NAVBAR
+========================= */
+.custom-navbar {
+    background: linear-gradient(90deg, #0d3b66, #1a1f2e);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1050;
+}
+
+.custom-navbar .navbar-brand {
+    padding: 0;
+}
+
+.navbar-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* =========================
+   NAV LINKS
+========================= */
+.custom-navbar .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+.custom-navbar .nav-home {
+    font-weight: 600;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+.custom-navbar .btn-outline-secondary {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #ffffff;
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+.custom-navbar .btn-outline-secondary:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: #ffffff;
+    color: #ffffff;
+}
+
+.custom-navbar .btn-primary {
+    background: #ffffff;
+    color: #6a7dfc;
+    border: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 6px 14px;
+}
+
+.custom-navbar .btn-primary:hover {
+    background: #f1f3f5;
+    color: #7a4db3;
+}
+
+/* =========================
+   LOGIN LINK
+========================= */
+#login-btn {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+#login-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffffff;
+}
+
+/* =========================
+   TOGGLER
+========================= */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 991px) {
+    .custom-navbar .navbar-collapse {
+        background: linear-gradient(180deg, #6a7dfc, #7a4db3);
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .custom-navbar .nav-link {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* =========================
+   EVENT SLIDE SHOW STYLES
+========================= */
+.carousel-container {
+    margin-bottom: 40px;
+}
+
+.carousel-container h3 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.carousel-image {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.carousel-placeholder {
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.event-card {
+    position: relative;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    border: none;
+    align-self: center;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+    .carousel-image {
+        height: 250px !important;
+    }
+    
+    .carousel-placeholder {
+        height: 250px !important;
+        font-size: 1.5rem;
+    }
+    
+    .carousel-caption {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+    }
+}
+
+/* Carousel specific fixes for better image visibility */
+.carousel-item {
+    height: 400px;
+    overflow: hidden;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-inner {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* Ensure carousel controls are visible */
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0.8;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+}
+
+/* Fix any potential z-index issues */
+.carousel-container {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel-caption {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}

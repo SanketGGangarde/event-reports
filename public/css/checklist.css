@@ -1,0 +1,332 @@
+/* Checklist Form Styles */
+*{
+    box-sizing:border-box;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+    margin:0;
+    min-height: 100vh;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+    background:linear-gradient(135deg,#667eea,#764ba2);
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom:30px;
+}
+
+.header h1{
+    margin:0;
+    font-size:2.5rem;
+    font-weight:700;
+    text-shadow:2px 2px 4px rgba(0,0,0,.3);
+}
+
+/* ================= CONTAINER ================= */
+
+.container{
+    max-width:1200px;
+    margin-bottom: 40px;
+    margin:auto;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+/* ================= FORM ================= */
+
+.form-group{
+    margin-bottom:25px;
+    animation:fadeIn .4s ease;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:6px;
+    font-weight:600;
+    color:#333;
+}
+
+/* ================= INPUT ================= */
+
+.form-control,
+textarea,
+input[type="text"],
+input[type="date"],
+input[type="tel"]{
+    width:100%;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    font-size:1rem;
+    background:#fafafa;
+    transition:.3s;
+}
+
+textarea{
+    min-height:80px;
+    resize:vertical;
+}
+
+.form-control:focus,
+textarea:focus,
+input:focus{
+    outline:none;
+    border-color:#667eea;
+    background:#fff;
+    box-shadow:0 0 0 3px rgba(102,126,234,.15);
+}
+
+/* ================= CHECKBOX ================= */
+
+input[type="checkbox"]{
+    transform:scale(1.2);
+    margin-right:8px;
+    cursor:pointer;
+}
+
+/* checklist rows */
+
+label input[type="checkbox"]{
+    margin-right:8px;
+}
+
+label + textarea{
+    margin-top:8px;
+    margin-bottom:18px;
+}
+
+/* highlight checked */
+
+input[type="checkbox"]:checked{
+    accent-color:#667eea;
+}
+
+/* ================= SECTIONS ================= */
+
+hr{
+    border:none;
+    border-top:2px dashed #ddd;
+    margin:30px 0;
+}
+
+h3{
+    color:#2c3e50;
+    margin-bottom:10px;
+}
+
+/* ================= TABLE ================= */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-bottom:15px;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+th{
+    background:#667eea;
+    color:#fff;
+    padding:12px;
+}
+
+td{
+    padding:10px;
+    border-bottom:1px solid #ddd;
+}
+
+td input,
+td textarea{
+    width:100%;
+}
+
+/* ================= BUTTON ================= */
+
+button{
+    background:#667eea;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:1rem;
+    transition:.3s;
+}
+
+button:hover{
+    background:#5a6fd8;
+    transform:translateY(-2px);
+}
+
+button[type="button"]{
+    background:#28a745;
+}
+
+button[type="button"]:hover{
+    background:#218838;
+}
+
+button[type="submit"]{
+    background:#e74c3c;
+    padding:12px 30px;
+    font-size:1.1rem;
+}
+
+button[type="submit"]:hover{
+    background:#c0392b;
+}
+
+/* delete buttons */
+
+button[onclick*="delete"]{
+    background:#e74c3c;
+}
+
+button[onclick*="delete"]:hover{
+    background:#c0392b;
+}
+
+/* ================= FILE INPUT ================= */
+
+input[type="file"]{
+    width:100%;
+    padding:12px;
+    border:2px dashed #667eea;
+    border-radius:8px;
+    background:#f8f9ff;
+}
+
+input[type="file"]:hover{
+    background:#f0f2ff;
+}
+
+/* ================= LAST LINE ================= */
+
+.lastline{
+    background:#f8f9fa;
+    padding:20px;
+    border-radius:10px;
+    border:2px solid #e9ecef;
+}
+
+.lastline h3{
+    margin-top:0;
+}
+
+/* ================= ALERT ================= */
+
+.alert{
+    padding:15px;
+    border-radius:8px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.alert-success{
+    background:#d4edda;
+    color:#155724;
+}
+
+.alert-error{
+    background:#f8d7da;
+    color:#721c24;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(10px);}
+    to{opacity:1;transform:translateY(0);}
+}
+
+/* Quick Actions Container */
+.quick-actions {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+/* Heading */
+.quick-actions-heading {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1f2933;
+}
+
+/* Remove default ul spacing */
+.quick-actions-list {
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Links */
+.quick-actions .nav-link {
+    background: #f1f5f9;
+    color: #1f2933;
+    padding: 10px 12px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+/* Hover Effect */
+.quick-actions .nav-link:hover {
+    background: #2563eb;
+    color: #ffffff;
+    transform: translateX(3px);
+}
+
+/* Active */
+.quick-actions .nav-link.active {
+    background: #1d4ed8;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Icons */
+.quick-actions .nav-link i {
+    font-size: 16px;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+    .quick-actions {
+        margin-top: 10px;
+    }
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+.container{
+    padding:20px;
+}
+
+.header h1{
+    font-size:2rem;
+}
+
+button{
+    margin-bottom:10px;
+}
+
+table{
+    font-size:.85rem;
+}
+
+}

@@ -1,0 +1,68 @@
+body {
+  font-family: "Times New Roman";
+  font-size: 120%;
+}
+.container {
+  margin-top: 50px;
+}
+.form-group label {
+  font-weight: bold;
+}
+.signature {
+    display: flex !important;
+    justify-content: space-around !important;
+    align-items: flex-end !important;
+    margin-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.signature div {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    max-width: 200px;
+    text-align: center;
+}
+.image-container {
+  text-align: center;
+  margin: 80px auto;
+}
+.img-logo img {
+  width: 100% !important;
+  border-radius: 4px;
+  padding: 5px;
+}
+.image-container img {
+  width: 1000px;
+  height: 500px;
+  border-radius: 4px;
+  padding: 30px !important;
+  /* margin-bottom: 120px !important; */
+}
+
+.invitation-title {
+    font-weight: bold !important;
+    font-size: 2rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+    color: #2c3e50 !important;
+    margin-bottom: 10px !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1) !important;
+}
+
+/* ---------- Event Report Photos ---------- */
+
+.image-container{
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+.image-container img{
+    max-width: 700px;     /* controls display width */
+    width: 700px;
+    height: 470px;        /* keeps original ratio */
+    object-fit: contain;  /* no crop */
+    border-radius: 6px;
+}

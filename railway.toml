@@ -1,0 +1,5 @@
+[build]
+builder = "NIXPACKS"
+
+[phases.setup]
+nixPkgs = ["php", "phpExtensions.pdo_mysql", "phpExtensions.mysqli"]
