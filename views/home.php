@@ -1,7 +1,7 @@
 <?php require_once __DIR__ . '/layouts/header.php'; ?>
 
 <div class="page-bg">
-    <div class="overlay row">
+    <div class="overlay row">   
 
         <!-- ================= CAROUSEL ================= -->
         <?php if (!empty($upcomingEvents)): ?>
